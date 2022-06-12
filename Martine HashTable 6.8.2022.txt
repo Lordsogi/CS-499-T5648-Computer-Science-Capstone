@@ -1,0 +1,14 @@
+mysql;
+CREATE DATABASE hashDB;
+CREATE TABLE hashes (
+	Username varchar(255),
+	Password varchar(255),
+	Hash varchar(255),
+	File varchar(255)
+);
+INSERT INTO hashes (
+	Martine,
+	Password,
+	dc647eb65e6711e155375218212b3964,
+	admin.txt
+);

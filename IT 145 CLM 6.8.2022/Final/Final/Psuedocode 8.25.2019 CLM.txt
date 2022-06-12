@@ -1,0 +1,43 @@
+Class Authentication
+	Method SystemLoop
+		Print "Login? Yes / No"
+		Login = System.in
+			if login = "No"
+				System exit
+			else if loging != "Yes"
+				Print "Goodbye"
+				System exit
+			else
+				Run Validate Class
+		if Validate.login = true
+			if validate.username = username1 from credentials.txt
+				Print vetenarian .txt
+				return
+			else if validate.username = username2 from credentials.txt
+				Print admin .txt
+				return
+			else validate.username = username3 from credentials.txt
+				Print zookeeper .txt
+				return
+Class Validate
+	Import MD5 method
+		username = system in
+		password = system in
+		import encrypted passwords from encryption .txt
+			while counter <= 3
+				if (password.MD5(encrypted) = password1(from .txt)) AND (username = username1(from .txt))
+					return boolean = true
+				else if (password.MD5(encrypted) = password2(from .txt)) AND (username = username2(from .txt))
+					return boolean = true
+				else if (password.MD5(encrypted) = password3(from .txt)) AND (username = username3(from .txt))
+					return boolean = true
+				else if (password.MD5(encrypted) = password4(from .txt)) AND (username = username4(from .txt))
+					return boolean = true
+				else if (password.MD5(encrypted) = password5(from .txt)) AND (username = username5(from .txt))
+					return boolean = true
+				else if (password.MD5(encrypted) = password6(from .txt)) AND (username = username6(from .txt))
+					return boolean = true
+				else
+					counter += 1
+					return
+		return boolean
